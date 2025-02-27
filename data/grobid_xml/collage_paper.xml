@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Collage: Decomposable Rapid Prototyping for Information Extraction on Scientific PDFs</title>
+				<funder ref="#_UmtTzEJ">
+					<orgName type="full">Army Research Laboratory</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,198.00,109.19,89.11,10.75"><forename type="first">Sireesh</forename><surname>Gururaja</surname></persName>
+							<email>sgururaj@cs.cmu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Language Technologies Institute</orgName>
+								<orgName type="department" key="dep2">School of Computer Science</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,311.02,109.19,80.28,10.75"><forename type="first">Yueheng</forename><surname>Zhang</surname></persName>
+							<email>yuehengz@andrew.cmu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,88.27,124.99,76.31,10.75"><forename type="first">Guannan</forename><surname>Tang</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,172.05,124.99,78.52,10.75"><forename type="first">Tianhao</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,270.00,124.99,75.28,10.75"><forename type="first">Kevin</forename><surname>Murphy</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,364.71,124.99,57.24,10.75"><forename type="first">Yu-Tsen</forename><surname>Yi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,441.37,124.99,61.15,10.75"><forename type="first">Junwon</forename><surname>Seo</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,202.66,140.80,82.02,10.75"><forename type="first">Anthony</forename><surname>Rollett</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,304.11,140.80,78.04,10.75"><forename type="first">Emma</forename><surname>Strubell</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Language Technologies Institute</orgName>
+								<orgName type="department" key="dep2">School of Computer Science</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Carnegie Mellon University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Collage: Decomposable Rapid Prototyping for Information Extraction on Scientific PDFs</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E8B4714125E536B40A6DDCD0CA301156</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-02-27T21:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><s coords="1,87.87,245.60,184.25,8.64;1,87.87,257.55,184.25,8.64;1,87.87,269.51,185.90,8.64;1,87.87,281.46,185.90,8.64;1,87.87,293.42,112.84,8.64">Recent years in NLP have seen the continued development of domain-specific information extraction tools for scientific documents, alongside the release of increasingly multimodal pretrained transformer models.</s><s coords="1,204.31,293.42,69.47,8.64;1,87.87,305.37,184.25,8.64;1,87.87,317.33,184.25,8.64;1,87.87,329.28,185.90,8.64;1,87.87,341.24,184.25,8.64;1,87.87,353.19,185.90,8.64;1,87.87,365.15,184.25,8.64;1,87.87,377.10,184.25,8.64;1,87.87,389.06,85.53,8.64">While the opportunity for scientists outside of NLP to evaluate and apply such systems to their own domains has never been clearer, these models are difficult to compare: they accept different input formats, are often black-box and give little insight into processing failures, and rarely handle PDF documents, the most common format of scientific publication.</s><s coords="1,176.49,389.06,95.63,8.64;1,87.87,401.01,185.50,8.64;1,87.63,412.97,186.15,8.64;1,87.87,424.93,185.99,8.64">In this work, we present Collage, a tool designed for rapid prototyping, visualization, and evaluation of different information extraction models on scientific PDFs.</s><s coords="1,87.87,436.88,184.60,8.64;1,87.87,448.84,185.49,8.64;1,87.87,460.79,184.25,8.64;1,87.87,472.75,185.90,8.64;1,87.87,484.70,184.61,8.64;1,87.87,496.66,31.90,8.64">Collage allows the use and evaluation of any HuggingFace token classifier, several LLMs, and multiple other task-specific models out of the box, and provides extensible software interfaces to accelerate experimentation with new models.</s><s coords="1,125.83,496.66,146.30,8.64;1,87.87,508.61,185.49,8.64;1,87.87,520.57,184.60,8.64;1,87.87,532.52,184.25,8.64;1,87.87,544.48,57.16,8.64">Further, we enable both developers and users of NLP-based tools to inspect, debug, and better understand modeling pipelines by providing granular views of intermediate states of processing.</s><s coords="1,148.71,544.48,123.41,8.64;1,87.87,556.43,184.25,8.64;1,87.52,568.39,168.83,8.64">We demonstrate our system in the context of information extraction to assist with literature review in materials science.</s></p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" coords="1,70.87,589.83,82.81,10.75">Introduction</head><p><s coords="1,70.87,611.77,218.27,9.46;1,70.87,625.32,220.08,9.46;1,70.87,638.87,128.86,9.46">In recent years, systems based on large language models (LLMs) have broadened the public visibility of developments in NLP.</s><s coords="1,203.54,638.87,85.60,9.46;1,70.87,652.42,218.65,9.46;1,70.87,665.96,218.27,9.46;1,70.87,679.51,220.08,9.46;1,70.87,693.06,220.08,9.46;1,70.87,706.61,197.44,9.46">With the advent of tools that have publicly accessible, user-friendly interfaces, experts in specialized domains outside NLP are empowered to use and evaluate these models inside their domains, for example to automatically mine insights from scientific literature.</s><s coords="1,272.00,706.61,18.94,9.46;1,70.87,720.16,220.07,9.46;1,70.87,733.71,220.08,9.46;1,70.87,747.26,122.86,9.46">Further, an increasing number of these tools are multimodal, handling not only text, but frequently images, or even PDFs directly.</s><s coords="1,197.11,747.26,92.02,9.46;1,306.14,403.68,219.92,8.64;1,306.14,415.63,219.51,8.64;1,306.14,427.59,194.60,8.64">However, despite the Figure <ref type="figure" coords="1,334.41,403.68,3.84,8.64">1</ref>: Collage allows users to inspect multiple models in different modalities by presenting a stage-by-stage, decomposed view of the PDF modeling pipeline.</s><s coords="1,503.83,427.59,21.83,8.64;1,305.78,439.54,218.62,8.64;1,306.14,451.50,197.49,8.64">Here, we see a PDF composed of text and tables, with entities from different models shown in red and yellow.</s><s coords="1,508.61,451.50,15.80,8.64;1,306.14,463.45,219.92,8.64;1,306.14,475.41,218.52,8.64;1,306.14,487.36,97.13,8.64;1,306.14,521.53,218.26,9.46;1,306.14,535.08,218.27,9.46;1,306.14,548.63,218.27,9.46;1,306.14,562.18,64.43,9.46">The summary view shows extracted content, while annotations and inspection views allow the user to step back in the modeling pipeline accessibility of these tools, the processing pipelines they employ remain as end-to-end black boxes and provide little interpretability or debuggability in case of failure.</s><s coords="1,373.96,562.18,150.84,9.46;1,306.14,575.73,220.07,9.46;1,306.14,589.28,219.63,9.46;1,306.14,602.83,216.69,9.46">Further, these systems usually rely only on large, deployed models, potentially leaving other user priorities, such as interpretability, efficiency, or domain specialization, unaddressed.</s><s coords="1,317.05,616.53,209.17,9.46;1,306.14,630.08,174.55,9.46;1,478.43,634.82,1.49,5.18;1,480.70,630.08,43.71,9.46;1,306.14,643.63,220.08,9.46;1,306.14,657.18,182.03,9.46">Domain specific research in domains like clinical <ref type="bibr" coords="1,321.78,630.08,100.33,9.46">(Naumann et al., 2023)</ref>, legal <ref type="bibr" coords="1,453.65,630.08,27.04,9.46;1,478.43,634.82,1.49,5.18;1,480.70,630.08,43.71,9.46;1,306.14,643.63,49.62,9.46" target="#b14">(Preot , iuc-Pietro et al., 2023)</ref>, and scientific <ref type="bibr" coords="1,423.09,643.63,84.23,9.46" target="#b7">(Knoth et al., 2020;</ref><ref type="bibr" coords="1,510.05,643.63,10.78,9.46;1,306.14,657.18,70.82,9.46" target="#b2">Cohan et al., 2022)</ref> NLP have long histories.</s><s coords="1,491.55,657.18,32.86,9.46;1,306.14,670.73,218.27,9.46;1,306.14,684.28,220.08,9.46;1,306.14,697.83,108.03,9.46">Models in these areas remain less accessible; in order to run and evaluate these models on your own data, custom code is often needed.</s><s coords="1,417.40,697.83,107.01,9.46;1,306.14,711.38,218.27,9.46;1,306.14,724.93,219.63,9.46;1,306.14,738.48,172.70,9.46">Further, because many of these models are text-only, evaluating their results in the context of their eventual use -for example, directly on a PDF -poses a challenge.</s><s coords="1,317.05,752.18,209.17,9.46;1,306.14,765.73,220.08,9.46;2,70.87,74.72,218.45,9.46;2,70.87,88.27,220.08,9.46;2,70.87,101.82,34.00,9.46">This paper presents Collage, a tool that facilitates the rapid prototyping, comparison, and eval-uation of multiple models (whether text-based or multimodal) on the contents of scientific PDF documents.</s><s coords="2,108.25,101.82,182.69,9.46;2,70.87,115.37,218.27,9.46;2,70.87,128.92,102.17,9.46">Collage was designed to address the interface between developers of NLP-based tools and the users of those tools.</s><s coords="2,176.42,128.92,112.72,9.46;2,70.87,142.47,218.27,9.46;2,70.87,156.02,218.45,9.46;2,70.87,169.57,115.70,9.46">To address user needs, we ground our design in a series of interviews with domain experts in multiple fields, with a particular focus on materials science.</s><s coords="2,189.95,169.57,99.18,9.46;2,70.87,183.12,220.07,9.46;2,70.87,196.67,220.08,9.46;2,70.87,210.22,218.27,9.46;2,70.59,223.76,220.35,9.46;2,70.87,237.31,220.18,9.46">Further, in cases where model results may not meet users' or developers' expectations, we visualize the intermediate representation at each step, giving the user a debuggable view of the modeling pipeline, allowing shared debugging processes between developers and users.</s><s coords="2,70.87,250.86,218.65,9.46;2,70.87,264.41,218.27,9.46;2,69.06,277.96,220.08,9.46;2,70.87,291.51,198.10,9.46">Collage is domain-agnostic, and can visualize any model that conforms to one of its three interfaces -for token classification models, text generation models, and image/text multimodal models.</s><s coords="2,274.56,291.51,14.58,9.46;2,70.87,305.06,218.27,9.46;2,70.87,318.61,219.63,9.46;2,70.87,332.16,220.08,9.46;2,70.87,345.71,169.21,9.46">We provide implementations of these interfaces that allow the use of any HuggingFace token classifier, multiple LLMs, and several additional models without requiring users to write any code.</s><s coords="2,245.34,345.71,43.80,9.46;2,70.87,359.26,218.27,9.46;2,70.87,372.81,128.38,9.46">All of the interfaces are easily implemented, and we provide instructions in our repository.</s></p><p><s coords="2,81.78,386.56,207.36,9.46;2,70.87,400.11,218.27,9.46;2,70.87,413.66,122.42,9.46">We make the code available on GitHub, the demo video on YouTube, and present a running instance on our server here.</s><s coords="2,196.77,413.66,93.72,9.46;2,70.87,427.21,219.63,9.46;2,70.47,440.76,150.50,9.46">If the server is down, our demo can be run through Docker Compose, with instructions in our repository.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" coords="2,70.87,464.09,74.15,10.75">Motivation</head><p><s coords="2,70.87,486.67,220.08,9.46;2,70.59,500.22,220.35,9.46;2,70.87,513.77,218.54,9.46;2,70.87,527.32,220.08,9.46;2,70.87,540.86,89.03,9.46">Collage is based on collected themes from interviews with 15 professionals across materials science, law, and policy, in which the authors ask about their practices for working with large collections of documents.</s><s coords="2,165.78,540.86,123.36,9.46;2,70.87,554.41,219.63,9.46;2,70.47,567.96,218.66,9.46;2,70.87,581.51,31.80,9.46">For a reasonable scope, we focus on the 9 materials scientists in our sample, whose responses concern their process of literature review.</s><s coords="2,108.83,581.51,180.31,9.46;2,70.87,595.06,218.45,9.46;2,70.87,608.61,80.00,9.46">We focus on three themes that emerged consistently from these interviews to inform our design of Collage:</s></p><p><s coords="2,70.87,629.81,74.32,9.81">Varied focuses.</s><s coords="2,156.10,630.24,133.04,9.46;2,70.87,643.79,218.65,9.46;2,70.87,657.34,220.08,9.46;2,70.87,670.89,218.27,9.46;2,70.87,684.44,188.06,9.46">One of the most prominent themes to emerge in our interviews is the variety of focuses that scientists, even in very closely related subfields, can have when reading a paper and evaluating it for relevance to their purpose.</s><s coords="2,262.32,684.44,26.82,9.46;2,70.87,697.99,218.27,9.46;2,70.87,711.54,220.08,9.46;2,70.87,725.09,218.26,9.46;2,70.87,738.63,87.79,9.46">While many participants focused on paper metadata, such as the reputation of the publication venue or citation count, others focused on cues from within the content of the paper.</s><s coords="2,162.05,738.63,127.09,9.46;2,70.87,752.18,218.27,9.46;2,70.87,765.73,218.65,9.46;2,305.75,418.66,218.66,9.46;2,306.14,432.21,216.50,9.46">For the design of Collage, we focus on allowing users to assess multiple different models for extracting the types of content that they would be interested in; we also design our tool with extensibility to new models as a primary concern.</s></p><p><s coords="2,306.14,469.83,106.52,9.81">Information in tables.</s><s coords="2,423.57,470.25,102.20,9.46;2,306.14,483.80,220.08,9.46;2,306.14,497.35,218.27,9.46;2,306.14,510.90,81.18,9.46">As pointed out above, many of our participants relied heavily on information provided in tables, rather than solely in the document text.</s><s coords="2,390.70,510.90,133.70,9.46;2,306.14,524.45,220.08,9.46;2,306.14,538.00,218.27,9.46;2,305.87,551.55,45.75,9.46">As such, an important concern in the design of Collage would be to allow multimodality in the models that it interfaces with and visualizes.</s></p><p><s coords="2,306.14,589.17,85.61,9.81">Older documents.</s><s coords="2,402.66,589.59,121.74,9.46;2,306.14,603.14,218.26,9.46;2,306.14,616.69,47.70,9.46">Our participants noted that they regularly work with documents across a wide time range.</s><s coords="2,357.07,616.69,167.61,9.46;2,306.14,630.24,218.26,9.46;2,306.14,643.79,156.39,9.46">Several participants noted that the work that they relied on most frequently were technical reports from the 1950s to the 1970s.</s><s coords="2,465.91,643.79,58.50,9.46;2,306.14,657.34,218.27,9.46;2,306.14,670.89,219.79,9.46;2,305.80,684.44,220.41,9.46;2,306.14,697.99,219.63,9.46;2,306.14,711.54,141.64,9.46">These reports are now digitized, but are otherwise highly variable in their accessibility to modern processing tools: The OCR used when digitizing them can be inaccurate, they often contain noise in the scanned images, and layouts are less standardized.</s><s coords="2,451.06,711.54,73.35,9.46;2,306.14,725.09,218.27,9.46;2,306.14,738.63,220.08,9.46;2,306.14,752.18,218.27,9.46;2,306.14,765.73,190.40,9.46">We therefore aim to provide an interface that allows users to inspect intermediate stages of processing, to better understand where a model may have failed, and what subsequent development should target next.</s><s coords="3,70.35,96.89,219.08,9.46;3,70.87,110.44,220.08,9.46;3,70.87,123.99,219.17,9.46;3,70.87,137.53,218.27,9.46;3,70.87,151.08,218.27,9.46;3,70.87,164.63,218.27,9.46;3,70.87,178.18,220.08,9.46;3,70.87,191.73,220.08,9.46;3,70.87,205.28,220.18,9.46">We conceptualize our system in three parts: PDF representation, which parses and makes the content of PDFs easily available to downstream usage; modeling, i.e. applying multiple models to that PDF representation, backed by common software interfaces, which facilitate the rapid extension of the set of available models; and a frontend graphical interface that allows users to visualize and compare the results of those models on uploaded PDFs.</s><s coords="3,70.35,218.83,218.78,9.46;3,70.87,232.38,219.63,9.46;3,70.87,245.93,207.57,9.46">We discuss the design choices and implementation details of each stage in the following subsections, and show an architectural overview in Figure <ref type="figure" coords="3,270.25,245.93,4.09,9.46" target="#fig_0">2</ref>.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" coords="3,70.87,269.63,119.18,9.81">PDF Representation</head><p><s coords="3,70.53,288.54,218.79,9.46;3,70.87,302.09,218.27,9.46;3,70.87,315.64,220.08,9.46;3,70.59,329.19,218.54,9.46;3,70.87,342.74,113.81,9.46">To produce a PDF representation amenable to our later processing, we build a pipeline on top of the PaperMage library <ref type="bibr" coords="3,158.88,315.64,73.40,9.46" target="#b8">(Lo et al., 2023)</ref>, which provides a convenient set of abstractions for handling multimodal PDF content.</s><s coords="3,189.69,342.74,99.44,9.46;3,70.87,356.28,220.07,9.46;3,70.87,369.83,122.93,9.46">PaperMage allows the definition of Recipes, i.e. combinations of processing steps that can be reused.</s><s coords="3,197.19,369.83,91.94,9.46;3,70.87,383.38,220.08,9.46;3,70.87,396.93,218.27,9.46;3,70.87,410.48,69.07,9.46">We base our pipeline off of its CoreRecipe pipeline, which identifies visual and textual elements of a paper, such as tables and paragraphs.</s></p><p><s coords="3,81.78,424.54,207.36,9.46;3,70.87,438.08,218.27,9.46;3,70.87,451.63,126.79,9.46">We then introduce several new components to the CoreRecipe, to make the paper representation more suitable to our use case.</s><s coords="3,201.06,451.63,88.07,9.46;3,70.87,465.18,218.27,9.46;3,70.87,478.73,218.27,9.46;3,70.87,492.28,218.26,9.46;3,70.87,505.83,122.58,9.46">First, we introduce a parser based on Grobid <ref type="bibr" coords="3,173.96,465.18,51.24,9.46">(GRO, 2008</ref><ref type="bibr" coords="3,230.18,465.18,24.90,9.46">(GRO, -2023))</ref>, which provides a semantic grouping of paragraphs into structural units, allowing us to segment processing and results by paper section.</s><s coords="3,196.84,505.83,94.10,9.46;3,70.87,519.38,219.63,9.46;3,70.47,532.93,218.66,9.46;3,70.87,546.48,220.08,9.46;3,70.87,560.03,214.82,9.46">Second, to address issues with text segmentation in scientific documents, we replace PaperMage's default segmenter (based on PySBD) with a SciBERT <ref type="bibr" coords="3,195.90,546.48,85.45,9.46" target="#b0">(Beltagy et al., 2019</ref>)based SciSpaCy <ref type="bibr" coords="3,144.20,560.03,100.89,9.46" target="#b11">(Neumann et al., 2019)</ref> pipeline.</s></p><p><s coords="3,81.78,574.08,207.36,9.46;3,70.87,587.63,218.27,9.46;3,70.87,601.18,220.18,9.46">At the end of this stage of processing, we have the PaperMage representation of a document, in the form of Entity objects, organized in Layers.</s><s coords="3,70.87,614.73,117.83,9.46">Entity objects can be e.g.</s><s coords="3,192.56,614.73,96.57,9.46;3,70.87,628.28,220.08,9.46;3,70.87,641.83,60.59,9.46">individual paragraphs by section or index, images of tables, and individual sentences.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" coords="3,70.87,665.53,182.81,9.81">Modeling and Software Interfaces</head><p><s coords="3,70.53,684.44,220.42,9.46;3,70.87,697.99,218.27,9.46;3,70.87,711.54,220.08,9.46;3,70.87,725.09,218.27,9.46;3,70.87,738.63,218.27,9.46;3,70.87,752.18,35.54,9.46">To facilitate the easy implementation of information extraction tools (in the form of PaperMage Predictors on the PDF representation), we define common interfaces that simplify the process of adding additional processing to a document's content.</s><s coords="3,110.51,752.18,178.63,9.46;3,70.87,765.73,218.65,9.46;3,306.14,317.03,218.27,8.64;3,306.14,328.99,220.01,8.64">These interfaces standardize three kinds of annotation on PDF content, abstracting away  LLMMessage is a data class wrapper around the system and user messages for LLMs in the OpenAI format.</s><s coords="3,306.14,340.94,218.27,8.64;3,306.14,352.90,127.83,8.64">Not shown are the property declarations; full listing can be found in our code repository.</s></p><p><s coords="3,306.14,388.87,218.45,9.46;3,306.14,402.42,218.27,9.46;3,306.14,415.97,220.08,9.46;3,306.14,429.52,220.08,9.46;3,306.14,443.07,112.39,9.46">the need to deal with extracting PDF content or rendering it visually on the PDF, requiring users to implement only a few simple functions for processing; all models currently in Collage are implementations of these interfaces.</s><s coords="3,421.90,443.07,102.50,9.46;3,306.14,456.62,218.45,9.46;3,306.14,470.17,218.27,9.46;3,306.14,483.72,40.48,9.46">Each of these interfaces additionally requires users to declare an identifier for the predictor so that it can be visualized in the frontend.</s><s coords="3,350.95,483.72,175.27,9.46;3,306.14,497.27,220.08,9.46;3,306.14,510.81,62.94,9.46">We describe the interfaces, the requirements for implementation, and current implementations below.</s><s coords="3,377.10,510.81,147.31,9.46;3,306.14,524.36,218.26,9.46;3,306.14,537.91,64.88,9.46">All interfaces are defined in the papermage_components/interfaces package of our repository.</s><s coords="3,374.82,537.91,151.40,9.46;3,306.14,551.46,218.27,9.46;3,306.14,565.01,220.07,9.46;3,306.14,578.56,218.54,9.46">In order to add a new custom processor, users must define a class that extends one of the interfaces specified below, and then register their predictor in the local_model_config.py</s><s coords="3,306.14,592.11,35.45,9.46">module.</s></p><p><s coords="3,306.14,616.27,218.27,9.88;3,306.14,630.24,220.07,9.46;3,306.14,643.79,218.27,9.46;3,306.14,657.34,120.93,9.46">Token Classification Interface: This interface is intended for any model that produces annotations of spans in text, i.e. most "classical" NER or event extraction models.</s><s coords="3,431.01,657.34,93.40,9.46;3,306.14,670.89,218.27,9.46;3,306.14,684.44,218.27,9.46;3,306.14,697.99,220.08,9.46;3,306.14,711.54,220.18,9.46">Users are required to extend the TokenClassificationPredictorABC class and override the tag_entities_in_batch method, which takes a list of strings to tag, and produces a list of lists of tagged entities per-sentence.</s><s coords="3,305.80,725.09,218.61,9.46;3,306.14,738.63,220.07,9.46;3,306.14,752.18,220.08,9.46;3,306.14,765.73,145.77,9.46">Tagged entities are expected to have the start and end character offsets, and the interface's code automatically handles mapping indices from the sentence level to the document level.</s><s coords="4,81.78,366.34,207.36,9.46;4,70.87,379.89,218.27,9.46;4,70.87,393.44,220.08,9.46;4,70.87,406.99,219.63,9.46;4,70.47,420.54,220.48,9.46;4,70.87,434.09,218.27,9.46;4,70.87,447.64,218.26,9.46;4,70.87,461.19,218.54,9.46;4,70.87,474.74,109.82,9.46;4,180.69,470.98,3.99,6.91;4,185.17,474.74,2.73,9.46">To demonstrate this interface, we provide two implementations: one with a common materials information extraction system, ChemDataExtrac-tor2 <ref type="bibr" coords="4,90.72,406.99,100.72,9.46" target="#b17">(Swain and Cole, 2016;</ref><ref type="bibr" coords="4,194.07,406.99,91.83,9.46" target="#b9">Mavracic et al., 2021)</ref>, which we wrap in a simple REST API and Dockerize to streamline environment and setup, as well as a predictor that can apply any HuggingFace model that conforms to the TokenClassification task on the HuggingFace Hub 1 .</s></p><p><s coords="4,70.87,497.74,220.08,9.88;4,70.87,511.72,219.63,9.46;4,70.87,525.27,220.07,9.46;4,70.87,538.82,69.99,9.46">Text Generation Interface: Given the prominence of large language model-based approaches, this interface is designed to allow for text-totext prediction.</s><s coords="4,152.74,538.82,136.40,9.46;4,70.87,552.36,218.27,9.46;4,70.87,565.91,219.36,9.46;4,70.87,579.46,191.02,9.46">Users are required to extend the TextGenerationPredictorABC class, and to implement the generate_from_entity_text() method, which takes and returns a string.</s><s coords="4,269.35,579.46,19.78,9.46;4,70.87,593.01,139.82,9.46">This basic setup allows users to e.g.</s><s coords="4,216.15,593.01,72.98,9.46;4,70.87,606.56,132.03,9.46">prompt an LLM and display the raw response.</s><s coords="4,207.08,606.56,83.87,9.46;4,70.87,620.11,218.27,9.46;4,70.87,633.66,138.44,9.46">A popular prompting method, however, is to request structured data e.g. in the form of JSON.</s><s coords="4,212.58,633.66,76.55,9.46;4,70.87,647.21,220.07,9.46;4,70.87,660.76,218.27,9.46;4,70.87,674.31,181.06,9.46">To accommodate this, and to allow for aggregating LLM predictions into a table, users can also implement the postprocess_text_to_dict() method.</s><s coords="4,256.35,674.31,34.59,9.46;4,70.87,687.86,218.27,9.46;4,70.87,701.41,218.27,9.46;4,70.87,714.96,218.27,9.46;4,70.87,728.50,67.56,9.46">The default implementation of this method attempts to deserialize the entirety of the LLM response into a dictionary, but users can implement more specific logic if needed.</s><s coords="4,81.78,742.78,207.36,9.46;4,83.52,764.28,2.99,5.18;4,87.01,767.00,90.74,7.77">Our implementation of this interface uses 1 Model list available here.</s></p><p><s coords="4,306.14,74.84,220.08,9.46;4,306.14,88.39,220.18,9.46">LiteLLM<ref type="foot" coords="4,347.23,71.08,3.99,6.91" target="#foot_0">2</ref> , a package that allows accessing multiple commercial LLM services behind the same API.</s></p><p><s coords="4,305.63,101.94,218.96,9.46;4,306.14,115.49,218.27,9.46;4,306.14,129.04,75.26,9.46">We allow users to specify the endpoint/model, their own API key, and a prompt, and display predictions from that model.</s><s coords="4,386.12,129.04,140.09,9.46;4,306.14,142.59,218.27,9.46;4,306.14,156.14,94.85,9.46">We show a partial implementation of this predictor in Figure <ref type="figure" coords="4,443.23,142.59,4.17,9.46" target="#fig_1">3</ref>, and a sample of its results in Figure <ref type="figure" coords="4,392.81,156.14,4.09,9.46" target="#fig_3">5</ref>.</s></p><p><s coords="4,306.14,177.63,218.27,9.88;4,306.14,191.61,218.66,9.46;4,306.14,205.16,220.07,9.46;4,306.14,218.71,220.07,9.46;4,305.87,232.25,219.91,9.46;4,306.14,245.80,220.08,9.46;4,306.14,259.35,166.46,9.46">Image Prediction Interface: Given the focus on tables and charts that many of our interview participants discussed, and the fact that table parsing is an active research area, we additionally provide an interface for models that parse images, the ImagePredictorABC in order to handle multimodal processing, including tables.</s><s coords="4,478.87,259.35,47.35,9.46;4,306.14,272.90,220.08,9.46;4,306.14,286.45,218.27,9.46;4,305.78,300.00,219.99,9.46;4,306.14,313.55,218.27,9.46;4,306.14,327.10,220.07,9.46;4,306.14,340.65,219.36,9.46;4,306.14,354.20,220.07,9.46;4,306.14,367.75,192.96,9.46">This interface allows users two options of method to override: In cases where only image inputs are needed (e.g. if a table extractor performs its own OCR), the process_image() method; in cases where the method is inherently multimodal, implementors can instead override the process_entity() method, which allows them full access to Paper-Mage's multimodal Entity representation.</s><s coords="4,504.62,367.75,19.78,9.46;4,306.14,381.30,218.27,9.46;4,306.14,394.84,220.08,9.46;4,306.14,408.39,167.12,9.46">This interface requires implementors to return at least one of three types of data: a raw string representation, which we view as useful for e.g.</s><s coords="4,477.02,408.39,49.19,9.46;4,306.14,421.94,219.63,9.46;4,306.14,435.49,218.26,9.46;4,306.14,449.04,220.18,9.46">image captioning tasks; a tabular dictionary representation, for the case of table parsing; or a list of bounding boxes, in the case of models that segment images.</s><s coords="4,306.14,462.59,218.27,9.46;4,306.14,476.14,218.27,9.46;4,306.14,489.69,107.85,9.46">Implementations of this interface are free to return more than one type of output; all of them will be rendered in the frontend.</s><s coords="4,317.05,503.53,209.26,9.46">We demonstrate implementations of both types.</s><s coords="4,306.14,517.08,218.45,9.46;4,306.14,530.63,218.27,9.46;4,306.14,544.18,107.02,9.46">For raw image outputs, we implement a predictor that calls the MathPix API<ref type="foot" coords="4,421.84,526.87,3.99,6.91" target="#foot_1">3</ref> , a commercial service for PDF understanding.</s><s coords="4,420.09,544.18,106.13,9.46;4,306.14,557.73,218.27,9.46;4,306.14,571.28,218.54,9.46;4,306.14,584.82,55.19,9.46">For the multimodal approach, we implement a predictor that builds on the Microsoft Table Transformer model <ref type="bibr" coords="4,490.06,571.28,34.62,9.46;4,306.14,584.82,50.46,9.46" target="#b16">(Smock et al., 2023)</ref>.</s><s coords="4,364.74,584.82,159.67,9.46;4,306.14,598.37,218.27,9.46;4,305.75,611.92,220.47,9.46;4,306.14,625.47,161.61,9.46">This model predicts bounding boxes around table cells, which we then cross-reference with extracted PDF text in the PaperMage representation to provide parsed table output.</s><s coords="4,471.15,625.47,53.26,9.46;4,306.14,639.02,218.27,9.46;4,306.14,652.57,69.69,9.46">An example of parsed table output from this predictor can be seen in figure <ref type="figure" coords="4,367.65,652.57,4.09,9.46" target="#fig_3">5</ref>.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3" coords="4,306.14,675.54,131.53,9.81">Visualization Frontend</head><p><s coords="4,305.63,694.02,218.78,9.46;4,306.14,707.57,220.08,9.46;4,306.14,721.12,218.27,9.46;5,70.87,452.39,218.27,9.46;5,70.87,465.94,98.78,9.46">We present the results of the PDF processing in an interactive tool built using Streamlit<ref type="foot" coords="4,485.39,703.81,3.99,6.91" target="#foot_2">4</ref> that allows the user to upload a PDF, define a processing  pipeline, and inspect the results of that processing pipeline at each stage.</s><s coords="5,173.72,465.94,115.42,9.46;5,70.87,479.49,218.27,9.46;5,70.87,493.04,218.27,9.46;5,70.87,506.59,155.86,9.46">More concretely, after the paper is uploaded and processed, we present the results of the pipeline in three views, in decreasing order of abstraction from the paper.</s><s coords="5,230.10,506.59,59.04,9.46;5,70.87,520.14,218.27,9.46;5,70.87,533.69,220.08,9.46;5,70.87,547.24,218.27,9.46;5,70.87,560.79,105.73,9.46">The intention of this is to first show the user the potential output of their chosen pipeline for a given paper, then allow them to inspect each step of the pipeline that led to that final output.</s><s coords="5,183.63,560.79,105.51,9.46;5,70.87,574.34,220.07,9.46;5,70.87,587.88,43.02,9.46">Each view is described in more detail below, and has a screenshot in Appendix A.</s></p><p><s coords="5,70.87,629.81,130.79,9.81">File Upload and Processing.</s><s coords="5,212.56,630.24,76.57,9.46;5,70.87,643.79,218.27,9.46;5,70.87,657.34,220.18,9.46">The first view we present to a user allows them to upload a file, and to define the processing pipeline applied to that file.</s><s coords="5,70.87,670.89,218.27,9.46;5,70.87,684.44,218.27,9.46;5,70.87,697.99,17.23,9.46">Basic PDF processing is always performed, and users can then toggle which custom models will be run.</s><s coords="5,91.50,697.99,197.64,9.46;5,70.87,711.54,218.27,9.46;5,70.47,725.09,218.66,9.46;5,70.87,738.63,218.27,9.46;5,70.87,752.18,143.35,9.46">Users can additionally specify any number of HuggingFace token classification models or LLMs with the provided widget, which allows users to search the HuggingFace Hub, select LLMs, and customize the prompts for them.</s><s coords="5,217.62,752.18,71.90,9.46;5,70.87,765.73,170.89,9.46">We show a view of the LLM model selector in Figure <ref type="figure" coords="5,233.58,765.73,4.09,9.46" target="#fig_2">4</ref>.</s></p><p><s coords="5,306.14,451.97,65.70,9.81">File Overview.</s><s coords="5,382.75,452.39,141.66,9.46;5,306.14,465.94,220.08,9.46;5,306.14,479.49,218.27,9.46;5,306.14,493.04,104.23,9.46">This view presents the high-level extracted information from the paper, as candidates for what could be shown to the user as part of their search process.</s><s coords="5,415.56,493.04,108.86,9.46;5,306.14,506.59,218.27,9.46;5,306.14,520.14,218.26,9.46;5,306.14,533.69,218.27,9.46;5,306.14,547.24,23.80,9.46">In particular, we show a two-column view, with tables of tagged entities from both token-level predictors and LLMs on the left, and the processed content of images on the right.</s><s coords="5,336.92,547.24,189.40,9.46">Users can filter based on sections, to e.g.</s><s coords="5,306.14,560.79,218.27,9.46;5,306.14,574.34,47.25,9.46">find materials mentioned in the methods section of a paper.</s><s coords="5,357.81,574.34,166.61,9.46;5,305.75,587.88,218.66,9.46;5,306.14,601.43,218.27,9.46;5,306.14,614.98,92.66,9.46">If the user finds the content extracted with the pipeline useful, the model and processing pipeline could be further developed into a more integrated prototype.</s><s coords="5,402.68,614.98,121.73,9.46;5,306.14,628.53,218.65,9.46;5,306.14,642.08,50.40,9.46">If not, the user can proceed to the succeeding views, to see where models may have failed.</s></p><p><s coords="5,306.14,670.46,60.36,9.81">Annotations.</s><s coords="5,377.41,670.89,148.80,9.46;5,306.14,684.44,220.18,9.46">This view allows the user to compare the results of models in the context of the PDF.</s></p><p><s coords="5,305.63,697.99,218.78,9.46;5,306.14,711.54,218.27,9.46;5,306.14,725.09,218.27,9.46;5,306.14,738.63,136.32,9.46">We present another two-column view, in which the PDF is visualized on the left, and allows the user to select a paragraph or table at a time, and visualize the results of each model on it.</s><s coords="5,445.84,738.63,78.57,9.46;5,306.14,752.18,218.65,9.46;5,306.14,765.73,218.27,9.46">In the case of text annotation, we visualize the entities identified by token prediction models as well as predictions from</s></p><p><s coords="6,70.87,74.72,30.60,9.46">LLMs.</s><s coords="6,105.71,74.72,183.43,9.46;6,70.87,88.27,218.27,9.46;6,70.87,101.82,61.93,9.46">In the case of images, all of the available output types from the image processing interface are visualized.</s><s coords="6,136.19,101.82,152.95,9.46;6,70.87,115.37,109.88,9.46">We show a composite screenshot of this interface in Figure <ref type="figure" coords="6,172.56,115.37,4.09,9.46" target="#fig_3">5</ref>.</s></p><p><s coords="6,70.87,136.54,125.37,9.81">Representation Inspection.</s><s coords="6,207.15,136.97,81.98,9.46;6,70.59,150.52,218.54,9.46;6,70.87,164.07,218.27,9.46;6,70.87,177.62,27.13,9.46">This view presents visualization of the PDF representation available to any downstream processing that the user might select.</s><s coords="6,101.40,177.62,187.74,9.46;6,70.87,191.17,219.63,9.46;6,70.87,204.72,166.78,9.46">In the sidebar, users can choose to visualize any PaperMage Layer, i.e. set of Entity objects, tagged by the basic processing steps.</s><s coords="6,242.97,204.72,46.17,9.46;6,70.59,218.26,218.54,9.46;6,70.87,231.81,218.27,9.46;6,70.87,245.36,91.83,9.46">Then, in a view similar to the raw annotations view, they can see all of those entities highlighted on the PDF in the left-side column.</s><s coords="6,166.30,245.36,124.64,9.46;6,70.87,258.91,218.27,9.46;6,70.87,272.46,218.27,9.46;6,70.87,286.01,219.63,9.46;6,70.87,299.56,220.08,9.46;6,70.87,313.11,101.30,9.46">Once the user selects an object, they see the raw content extracted from that object in the right-side column, in the form of its image representation and the text extracted from it, along with the option to view how the text is segmented into sentences.</s><s coords="6,176.07,313.11,113.06,9.46;6,70.87,326.66,218.27,9.46;6,70.87,340.21,218.27,9.46;6,70.87,353.76,220.08,9.46;6,70.87,367.31,209.39,9.46">This view allows users to inspect how the PDF processing choices may have affected the text they send to models, which often have significant effects on their downstream performance <ref type="bibr" coords="6,102.07,367.31,173.49,9.46" target="#b1">(Camacho-Collados and Pilehvar, 2018)</ref>.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" coords="6,70.87,390.61,73.62,10.75">Evaluation</head><p><s coords="6,70.35,413.16,218.78,9.46;6,70.87,426.71,218.27,9.46;6,70.87,440.26,218.27,9.46;6,70.87,453.81,93.47,9.46">We evaluate our system based on two measures: the degree to which it addresses the concerns shared in our interviews, and how it can be situated among existing related tools.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1" coords="6,70.87,476.45,184.93,9.81">Addressing Needs from Interviews</head><p><s coords="6,70.87,494.75,218.27,9.46;6,70.87,508.30,165.75,9.46">Our system is specifically designed to respond to the concerns raised in our interviews.</s><s coords="6,240.03,508.30,50.91,9.46;6,70.87,521.85,220.08,9.46;6,70.87,535.40,220.08,9.46;6,70.87,548.95,218.45,9.46;6,70.87,562.49,218.27,9.46;6,70.87,576.04,218.27,9.46;6,70.87,589.59,218.27,9.46;6,70.87,603.14,84.33,9.46">First, to accommodate the varied processes of materials scientists, we design interfaces that allow for easy implementation of new models into our framework; our existing implementations of those interfaces also allow for the application of multiple LLMs and HuggingFace models directly in the context of the PDFs under review.</s><s coords="6,158.60,603.14,130.72,9.46;6,70.87,616.69,220.07,9.46;6,70.87,630.24,26.62,9.46">This allows users to search for and evaluate models that suit their existing workflows.</s><s coords="6,104.75,630.24,184.39,9.46;6,70.87,643.79,218.27,9.46;6,70.87,657.34,220.08,9.46;6,70.87,670.89,23.80,9.46">For tables, we both provide an interface and implementations that allow the comparison of proprietary and open-source table parsing systems.</s><s coords="6,101.20,670.89,187.94,9.46;6,70.87,684.44,218.27,9.46;6,70.87,697.99,124.64,9.46">Extending this work to new table models and evaluating them is simplified by our software and visualization interfaces.</s><s coords="6,199.35,697.99,90.18,9.46;6,70.87,711.54,219.79,9.46;6,70.87,725.09,219.63,9.46;6,70.87,738.63,220.08,9.46;6,70.87,752.18,218.27,9.46;6,70.87,765.73,49.39,9.46">Our inspection view is designed to address concerns about older PDFs: in being able to inspect the results of processing, users and engineers of this system can identify failure modes in both the upstream and downstream processing.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" coords="6,306.14,74.30,173.12,9.81">Comparison with Related Work</head><p><s coords="6,306.14,93.44,218.27,9.46;6,306.14,106.99,218.27,9.46;6,306.14,120.54,218.27,9.46;6,306.14,134.09,220.08,9.46;6,306.14,147.64,20.10,9.46">Collage situates itself at the intersection of tools that offer reading assistance for scientific PDFs and tools that partially automate the process of literature review by means of information extraction.</s><s coords="6,332.51,147.64,191.90,9.46;6,306.14,161.19,218.65,9.46;6,306.14,174.74,220.07,9.46;6,306.14,188.29,220.08,9.46;6,306.14,201.84,191.10,9.46">Tools for scientific PDFs often focuses on interfaces that augment the existing PDF with new information, such as citation contexts <ref type="bibr" coords="6,482.97,174.74,38.45,9.46;6,306.14,188.29,80.38,9.46" target="#b15">(Rachatasumrit et al., 2022;</ref><ref type="bibr" coords="6,389.17,188.29,95.68,9.46" target="#b12">Nicholson et al., 2021)</ref>, or highlights that aid skimming <ref type="bibr" coords="6,417.30,201.84,75.15,9.46" target="#b4">(Fok et al., 2023)</ref>.</s><s coords="6,501.16,201.84,25.06,9.46;6,306.14,215.39,218.26,9.46;6,306.14,228.94,143.42,9.46">However, most of these works are designed around and purpose-built for specific models.</s><s coords="6,452.91,228.94,73.32,9.46;6,306.14,242.48,219.63,9.46;6,306.14,256.03,218.27,9.46;6,306.14,269.58,218.27,9.46;6,306.14,283.13,161.55,9.46">By contrast, Collage draws from projects like PaperMage <ref type="bibr" coords="6,484.26,242.48,41.51,9.46;6,306.14,256.03,23.86,9.46" target="#b8">(Lo et al., 2023)</ref>, by attempting to be model-agnostic, while at the same time providing a visual interface to prototype and evaluate those models.</s><s coords="6,317.05,297.31,207.36,9.46;6,306.14,310.86,195.17,9.46">Scientific information extraction and literature review automation also have long histories.</s><s coords="6,506.43,310.86,19.78,9.46;6,306.14,324.41,218.27,9.46;6,306.14,337.96,218.27,9.46;6,305.78,351.50,218.63,9.46;6,306.14,365.05,218.27,9.46;6,306.14,378.60,220.07,9.46;6,306.14,392.15,71.11,9.46">Collage's focus on materials science was driven by the field's existing investment into data-driven design <ref type="bibr" coords="6,305.78,351.50,97.05,9.46" target="#b6">(Himanen et al., 2019;</ref><ref type="bibr" coords="6,405.56,351.50,85.05,9.46" target="#b13">Olivetti et al., 2020)</ref>, which focuses on using information extraction tools to build up knowledge graphs to inform future materials research.</s><s coords="6,384.67,392.15,140.13,9.46;6,306.14,405.70,220.07,9.46;6,306.14,419.25,220.08,9.46;6,306.14,432.80,219.00,9.46;6,306.14,446.35,167.70,9.46">This adds to the existing body of work in chemical and material information extraction, including works like ChemDataExtractor <ref type="bibr" coords="6,321.15,432.80,104.24,9.46" target="#b17">(Swain and Cole, 2016;</ref><ref type="bibr" coords="6,428.11,432.80,97.03,9.46" target="#b9">Mavracic et al., 2021)</ref> and MatSciBERT <ref type="bibr" coords="6,386.04,446.35,83.12,9.46" target="#b5">(Gupta et al., 2022)</ref>.</s><s coords="6,477.25,446.35,47.16,9.46;6,306.14,459.90,220.08,9.46;6,306.14,473.45,218.65,9.46;6,306.14,487.00,218.27,9.46;6,306.14,500.55,220.08,9.46;6,306.14,514.09,17.00,9.46">Works like <ref type="bibr" coords="6,306.14,459.90,96.36,9.46" target="#b3">Dagdelen et al. (2024)</ref> showcase the growing interest in LLM-based extraction; as LLMs increasingly become multimodal, this capability is likely to be used for tasks like scientific document understanding.</s><s coords="6,330.04,514.09,194.37,9.46;6,306.14,527.64,218.27,9.46;6,306.14,541.19,218.27,9.46;6,306.14,554.74,220.08,9.46;6,306.14,568.29,218.54,9.46;6,305.75,581.84,58.11,9.46">While all of these tools are intended to be applied to documents from the materials science domain, they do not share an interface: most tools expect plain text, some, like ChemDataExtractor allow HTML and XML documents, and some work with images.</s><s coords="6,371.11,581.84,153.30,9.46;6,305.75,595.39,220.47,9.46;6,306.14,608.94,218.27,9.46;6,306.14,622.49,54.97,9.46">Collage aims to be a platform on which multiple competing approaches can be evaluated, regardless of the input and output formats they require.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" coords="6,306.14,647.28,75.07,10.75">Conclusion</head><p><s coords="6,306.14,670.89,218.27,9.46;6,306.14,684.44,218.65,9.46;6,306.14,697.99,173.74,9.46">In this work, we present Collage, a system designed to facilitate rapid prototyping of mixed modality information extraction on PDF content.</s><s coords="6,483.28,697.99,41.13,9.46;6,306.14,711.54,219.63,9.46;6,306.14,725.09,218.27,9.46;6,306.14,738.63,198.51,9.46">We focus on a case study in the materials science domain, that allows materials scientists to evaluate models for their ability to assist in literature review.</s><s coords="6,509.84,738.63,14.58,9.46;6,306.14,752.18,218.27,9.46;6,306.14,765.73,190.52,9.46">We intend for this work to be a platform on which to evaluate further modeling work in this area.</s></p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc><div><p><s coords="2,306.14,291.23,219.92,8.64;2,306.14,303.18,65.85,8.64">Figure 2: System architecture with currently implemented models.</s><s coords="2,379.71,303.18,144.87,8.64;2,306.14,315.14,219.92,8.64;2,306.14,327.09,200.90,8.64">All custom models implement our interfaces, outline color indicates which: Token Classification, Text Generation, or Image Processing.</s><s coords="2,306.14,339.05,219.92,8.64;2,306.14,351.00,42.90,8.64;2,369.31,351.00,156.85,8.64">indicates components running in the same Docker container, and indicates models running in the cloud.</s><s coords="2,306.14,362.96,218.26,8.64;2,306.14,374.91,81.62,8.64">"Materials IE" refers to materials-specific models, like ChemDataExtractor.</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 3 :</head><label>3</label><figDesc><div><p><s coords="3,306.14,281.17,46.89,8.64;3,376.01,281.17,148.39,8.64;3,305.89,293.12,220.17,8.64;3,306.14,305.08,220.01,8.64;3,306.14,317.03,218.27,8.64;3,306.14,328.99,220.01,8.64">Figure 3: Partial implementation of the TextGenerationPredictor to allow LLM predictions given an Entity extracted from the PDF.LLMMessage is a data class wrapper around the system and user messages for LLMs in the OpenAI format.</s><s coords="3,306.14,340.94,218.27,8.64;3,306.14,352.90,127.83,8.64">Not shown are the property declarations; full listing can be found in our code repository.</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 :</head><label>4</label><figDesc><div><p><s coords="4,70.87,295.17,218.27,8.64;4,70.62,307.12,21.40,8.64">Figure 4: LLM Selector, as it appears in the File Upload view.</s><s coords="4,95.73,307.12,193.41,8.64;4,70.87,319.08,218.44,8.64;4,70.87,331.03,139.86,8.64">Users specify an LLM to query, enter their API key, customize the prompt for an LLM, and repeat for any number of LLMs and prompts.</s></p></div></figDesc><graphic coords="4,70.87,70.87,218.27,212.45" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 :</head><label>5</label><figDesc><div><p><s coords="5,70.87,370.72,128.84,8.64">Figure 5: The annotations view.</s><s coords="5,202.81,370.72,322.84,8.64;5,70.87,382.67,315.53,8.64">On the left, a screenshot showing the sidebar, allowing file and model selection, and the left pane, a visualization of the PDF with clickable regions highlighted.</s><s coords="5,389.48,382.67,134.93,8.64;5,70.62,394.63,453.79,8.64;5,70.87,406.58,453.54,8.64;5,70.54,418.54,37.36,8.64">On the right, screenshots showing visualizations from theTable Transformer model with bounding boxes and parsed table (top), a HuggingFace transformer model with token-level tags (middle), and GPT-3.5 Turbo, with JSON output parsed into a table (bottom).</s></p></div></figDesc><graphic coords="5,70.87,70.86,256.13,288.01" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 :</head><label>6</label><figDesc><div><p><s coords="9,70.87,383.28,453.55,8.64;9,70.87,395.23,255.13,8.64">Figure 6: The Upload Paper view, showing (1) The currently selected models, (2) widget for selecting HuggingFace and LLM Classifiers, (3) File upload and progress visualization.</s></p></div></figDesc><graphic coords="9,70.87,83.44,503.93,287.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 7 :</head><label>7</label><figDesc><div><p><s coords="9,70.87,738.24,453.54,8.64;9,70.87,750.20,355.01,8.64">Figure 7: The Summary view, showing (1) the sidebar allowing model and entity type selection, (2) visualized tagged entities from the selected tagging models, (3) visualized image processing results.</s></p></div></figDesc><graphic coords="9,70.87,438.41,503.93,287.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 8 :</head><label>8</label><figDesc><div><p><s coords="10,70.87,383.28,453.55,8.64;10,70.87,395.23,320.09,8.64">Figure 8: The Annotations view, showing (1) the sidebar allowing model and entity type selection, (2) the visualized PDF, showing clickable regions (3) visualized annotations on the clicked region.</s></p></div></figDesc><graphic coords="10,70.87,83.44,503.93,287.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 9 :</head><label>9</label><figDesc><div><p><s coords="10,70.87,738.24,454.79,8.64;10,70.87,750.20,300.49,8.64">Figure 9: The Inspection view, showing (1) the sidebar allowing PaperMage layer selection, (2) the visualized PDF, showing clickable regions (3) the image and the text of the selected Entity</s></p></div></figDesc><graphic coords="10,70.87,438.41,503.93,287.98" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0"><p><s coords="4,322.28,743.79,107.60,7.20">https://docs.litellm.ai/</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1"><p><s coords="4,322.28,755.29,74.48,7.77">https://mathpix.com/</s></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2"><p><s coords="4,322.28,767.19,89.66,7.20">https://streamlit.io</s></p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head coords="7,70.87,321.02,98.83,10.75">Acknowledgements</head><p>Research was sponsored by the <rs type="funder">Army Research Laboratory</rs> and was accomplished under Cooperative Agreement Number <rs type="grantNumber">W911NF-22-2-0121</rs>.The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the <rs type="institution">Army Research Laboratory</rs> or the <rs type="institution">U.S. Government.The U.S. Government</rs> is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation herein.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_UmtTzEJ">
+					<idno type="grant-number">W911NF-22-2-0121</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="7,70.87,73.58,143.58,10.75">Ethics and Broader Impacts</head><p><s coords="7,70.87,95.40,218.27,9.46;7,70.87,108.95,218.27,9.46;7,70.87,122.50,186.11,9.46">Our interview study was evaluated and approved by the Carnegie Mellon University Institutional Review Board as STUDY2023_00000431.</s></p><p><s coords="7,81.78,136.05,207.36,9.46;7,70.87,149.60,220.08,9.46;7,70.87,163.15,218.65,9.46;7,70.87,176.70,199.28,9.46">In developing a tool to facilitate the automated processing of scientific PDFs, we feel that it is important to acknowledge that that automation may propagate the biases of the underlying models.</s><s coords="7,273.51,176.70,17.44,9.46;7,70.87,190.24,218.27,9.46;7,70.87,203.79,218.27,9.46;7,70.87,217.34,218.45,9.46;7,70.87,230.89,220.08,9.46;7,70.87,244.44,113.85,9.46">Particularly in the case of English that does not reflect the training corpora that models were built on top of, models can perform poorly, leading to fewer results from those papers, and the potential to inadvertently exclude them.</s><s coords="7,188.09,244.44,101.04,9.46;7,70.87,257.99,220.07,9.46;7,70.87,271.54,218.27,9.46;7,70.87,285.09,218.27,9.46;7,70.87,298.64,23.95,9.46">However, we hope that in providing a tool to inspect model outputs before such automation tools are deployed, that we can encourage critical evaluation and uses of these tools.</s></p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Scibert: A pretrained language model for scientific text</title>
+		<author>
+			<persName coords=""><forename type="first">Iz</forename><surname>Beltagy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kyle</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arman</forename><surname>Cohan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1903.10676</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">On the role of text preprocessing in neural network architectures: An evaluation study on text categorization and sentiment analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Jose</forename><surname>Camacho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">-Collados</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohammad</forename><surname>Taher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pilehvar</forename></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/W18-5406</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP</title>
+		<meeting>the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP<address><addrLine>Brussels, Belgium</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="40" to="46" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Arman</forename><surname>Cohan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guy</forename><surname>Feigenblat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dayne</forename><surname>Freitag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tirthankar</forename><surname>Ghosal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Drahomira</forename><surname>Herrmannova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Petr</forename><surname>Knoth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kyle</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Philipp</forename><surname>Mayr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michal</forename><surname>Shmueli-Scheuer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anita</forename><surname>De Waard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lucy</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wang</forename></persName>
+		</author>
+		<title level="m">Proceedings of the Third Workshop on Scholarly Document Processing</title>
+		<meeting>the Third Workshop on Scholarly Document Processing<address><addrLine>Gyeongju, Republic of Korea</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Structured information extraction from scientific text with large language models</title>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Dagdelen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sanghoon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicholas</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gerbrand</forename><surname>Ceder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kristin</forename><forename type="middle">A</forename><surname>Persson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anubhav</forename><surname>Jain</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-024-45563-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1418</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Scim: Intelligent Skimming Support for Scientific Papers</title>
+		<author>
+			<persName coords=""><forename type="first">Raymond</forename><surname>Fok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hita</forename><surname>Kambhamettu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Soldaini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jonathan</forename><surname>Bragg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kyle</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Head</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marti</forename><forename type="middle">A</forename><surname>Hearst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Weld</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3581641.3584034</idno>
+		<idno>ArXiv:2205.04561 [cs</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th International Conference on Intelligent User Interfaces</title>
+		<meeting>the 28th International Conference on Intelligent User Interfaces</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="476" to="490" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Matscibert: A materials domain language model for text mining and information extraction</title>
+		<author>
+			<persName coords=""><forename type="first">Tanishq</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohd</forename><surname>Zaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mausam</forename><surname>Nm Anoop Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">npj Computational Materials</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">102</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Data-driven materials science: status, challenges, and perspectives</title>
+		<author>
+			<persName coords=""><forename type="first">Lauri</forename><surname>Himanen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Amber</forename><surname>Geurts</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><forename type="middle">Stuart</forename><surname>Foster</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrick</forename><surname>Rinke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Science</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">1900808</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Petr</forename><surname>Knoth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><surname>Stahl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bikash</forename><surname>Gyawali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Pride</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Suchetha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Drahomira</forename><surname>Kunnath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Herrmannova</surname></persName>
+		</author>
+		<title level="m">Proceedings of the 8th International Workshop on Mining Scientific Publications</title>
+		<meeting>the 8th International Workshop on Mining Scientific Publications<address><addrLine>Wuhan, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Papermage: A unified toolkit for processing, representing, and manipulating visuallyrich scientific documents</title>
+		<author>
+			<persName coords=""><forename type="first">Kyle</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zejiang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Newman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joseph</forename><forename type="middle">Z</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Russell</forename><surname>Authur</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Erin</forename><surname>Bransom</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefan</forename><surname>Candra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoganand</forename><surname>Chandrasekhar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Regan</forename><surname>Huff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bailey</forename><surname>Kuehl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</title>
+		<meeting>the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="495" to="507" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Chemdataextractor 2.0: Autopopulated ontologies for materials science</title>
+		<author>
+			<persName coords=""><forename type="first">Juraj</forename><surname>Mavracic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Callum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Taketomo</forename><surname>Court</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><forename type="middle">R</forename><surname>Isazawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacqueline</forename><forename type="middle">M</forename><surname>Elliott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Cole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Chemical Information and Modeling</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="4280" to="4289" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m">Proceedings of the 5th Clinical Natural Language Processing Workshop</title>
+		<editor>
+			<persName><forename type="first">Tristan</forename><surname>Naumann</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Asma</forename><surname>Ben Abacha</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Steven</forename><surname>Bethard</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Kirk</forename><surname>Roberts</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Anna</forename><surname>Rumshisky</surname></persName>
+		</editor>
+		<meeting>the 5th Clinical Natural Language Processing Workshop<address><addrLine>Toronto, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">ScispaCy: Fast and robust models for biomedical natural language processing</title>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Iz</forename><surname>Beltagy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Waleed</forename><surname>Ammar</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/W19-5034</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th BioNLP Workshop and Shared Task</title>
+		<meeting>the 18th BioNLP Workshop and Shared Task<address><addrLine>Florence, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="319" to="327" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">scite: A smart citation index that displays the context of citations and classifies their intent using deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">Josh</forename><forename type="middle">M</forename><surname>Nicholson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Milo</forename><surname>Mordaunt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrice</forename><surname>Lopez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ashish</forename><surname>Uppala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Domenic</forename><surname>Rosati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Neves</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sean</forename><forename type="middle">C</forename><surname>Grabitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rife</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/qss_a_00146</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Quantitative Science Studies</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="882" to="898" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Data-driven materials research enabled by natural language processing and information extraction</title>
+		<author>
+			<persName coords=""><forename type="first">Elsa</forename><forename type="middle">A</forename><surname>Olivetti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacqueline</forename><forename type="middle">M</forename><surname>Cole</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edward</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Olga</forename><surname>Kononova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gerbrand</forename><surname>Ceder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yong-Jin</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anna</forename><forename type="middle">M</forename><surname>Hiszpanski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics Reviews</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Preot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catalina</forename><surname>Iuc-Pietro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ilias</forename><surname>Goanta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Leslie</forename><surname>Chalkidis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gerasimos</forename><surname>Barrett</surname></persName>
+		</author>
+		<title level="m">Proceedings of the Natural Legal Language Processing Workshop</title>
+		<editor>
+			<persName><forename type="first">Jerry</forename><forename type="middle">)</forename><surname>Spanakis</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Nikolaos</forename><surname>Aletras</surname></persName>
+		</editor>
+		<meeting>the Natural Legal Language Processing Workshop<address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2023">2023. 2023</date>
+		</imprint>
+	</monogr>
+	<note>Association for Computational Linguistics</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">CiteRead: Integrating Localized Citation Contexts into Scientific Paper Reading</title>
+		<author>
+			<persName coords=""><forename type="first">Napol</forename><surname>Rachatasumrit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jonathan</forename><surname>Bragg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Amy</forename><forename type="middle">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Weld</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3490099.3511162</idno>
+	</analytic>
+	<monogr>
+		<title level="m">27th International Conference on Intelligent User Interfaces, IUI &apos;22</title>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="707" to="719" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Aligning benchmark datasets for table structure recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Brandon</forename><surname>Smock</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rohith</forename><surname>Pesala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Robin</forename><surname>Abraham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Document Analysis and Recognition</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="371" to="386" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">ChemDataExtractor: A Toolkit for Automated Extraction of Chemical Information from the Scientific Literature</title>
+		<author>
+			<persName coords=""><forename type="first">Matthew</forename><forename type="middle">C</forename><surname>Swain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacqueline</forename><forename type="middle">M</forename><surname>Cole</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jcim.6b00207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Chemical Information and Modeling</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1894" to="1904" />
+			<date type="published" when="2016">2016</date>
+			<publisher>American Chemical Society</publisher>
+		</imprint>
+	</monogr>
+	<note>A Appendix: Screenshots of Interface Views</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
